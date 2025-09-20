@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Sentence</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      font-size: 1.2em;
+    }
+    #random-line {
+      padding: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <div id="random-line"></div>
+
+  <script>
+    const sentences = [
+      "The best automotive critique whenever we damn feel like it",
+      "Better than Ja-slop-nik!",
+      "Like a fly to shit you have returned. Welcome!",
+      "CONSUME YOU WORTHLESS CONSUMER",
+      "Tonight on MSIMA!",
+      "Make sure to tune into MSIMA Radio! The only VOICE of TRUTH in the automotive world.",
+      "Welcome to MSIMA! The BEST and ONLY TRUE source of Automotive Journalism",
+      "Have you called your parents recently?",
+      "I hate Mondays.",
+      "Welcome consumer, to MSIMA! Your only trusted source for car news and reviews.",
+      "The finest automotive context whenever we remember to upload!",
+      "CHECK YOUR OIL LEVEL PLEASE!!!!",
+      "Remember to play MSIMA Radio LOUD to tune out your parents divorce!",
+      "Insert a jab at the C4 Corvette here",
+      "Welcome to MSIMA! 100% human written since 2023!",
+      "Fuck you, you half formed fetal pig, and give us views!",
+      "Of all the moments you will have in life, you’ve chosen to spend them here?",
+      "Welcome to MSIMA! The only website with a 5% C4 Corvette owner approval rate!",
+      "Hey, get back to work schmuck!",
+      "The number 5 Chevy needs to gain more speed, get on out there.",
+      "Isn’t there a GTP car you’ve gotta work on?",
+      "Hi Mom <3"
+    ];
+
+    const randomIndex = Math.floor(Math.random() * sentences.length);
+    document.getElementById("random-line").textContent = sentences[randomIndex];
+  </script>
+</body>
+</html>
